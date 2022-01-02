@@ -1,0 +1,7 @@
+Removing Existing Elements from DOM
+Similarly, you can use the removeChild() method to remove a child node from the DOM. This method also returns 
+the removed node. 
+
+It is also possible to remove the child element without exactly knowing the parent element. Simply find the 
+child element and use the parentNode property to find its parent element. This property returns the parent 
+of the specified node in the DOM tree.
