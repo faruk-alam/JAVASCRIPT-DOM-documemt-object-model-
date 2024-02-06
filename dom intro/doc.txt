@@ -1,0 +1,25 @@
+An Idea of DOM?
+Imagine this: you have the TV on. You don't like the show that's being streamed, and you want to change it. 
+You also want to increase its volume.
+
+To do that, there has to be a way for you to interact with your television. And what do you use to do that?
+Ovviously A remote.
+
+The remote serves as the bridge which allows you interact with your television.
+You make the TV active and dynamic via the remote. And in the same way, JavaScript makes the HTML page 
+active and dynamic via the DOM.
+
+What is DOM :
+The Document Object Model, usually referred to as the DOM, is an essential part of making websites 
+interactive. It is an interface that allows JavaScript to manipulate the content, structure, 
+and style of a website. JavaScript is the client-side scripting language that connects to the DOM in an 
+internet browser.
+
+Understanding the DOM trees and Nodes:
+The DOM represents a document as a tree-like structure, with each element in the document represented as a 
+node in the tree,In order to be proficient at accessing elements in the DOM, we went over what the Document 
+Object Model (DOM) is, how to access…
+
+How To Access Elements in the DOM
+In order to be proficient at accessing elements in the DOM, it is necessary to go over several ways to 
+access elements in the DOM: by ID, class, tag, and query selectors.

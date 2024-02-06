@@ -1,0 +1,5 @@
+SELECTING OR ACESSING ELEMENTS FROM THE DOM:
+HTML elements can be accessed or "selected" from the Document Object Model using a variety of ways.
+The easiest and most beginner-friendly way to access elements in the DOM is by using
+the document.getElementById() method. This method takes a single argument, the id of the element you want 
+to access, and returns the element as an object.

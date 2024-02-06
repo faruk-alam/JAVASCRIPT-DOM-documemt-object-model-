@@ -10,3 +10,4 @@ method.
 
 This method accepts two parameters: the position in which to insert and the HTML text to insert. The position 
 must be one of the following values: "beforebegin", "afterbegin", "beforeend", and "afterend". 
+
