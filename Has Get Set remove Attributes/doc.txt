@@ -1,0 +1,17 @@
+JavaScript provides several methods for adding, removing or changing an HTML element's attribute.
+
+Checking Element's Attribute :
+hasAttribute()method is used to check whether has a specific attribute or not.
+Returns a true or false boolean
+
+Getting Element's Attribute Value:
+The getAttribute() method is used to get the current value of a attribute on the element.
+If the specified attribute does not exist on the element, it will return null. 
+
+Setting Element's Attribute Value
+The setAttribute() method is used to set an attribute on the specified element.
+If the attribute already exists on the element, the value is updated; otherwise a new attribute is added 
+with the specified name and value.
+
+Removing Attributes from Elements
+The removeAttribute() method is used to remove an attribute from the specified element.

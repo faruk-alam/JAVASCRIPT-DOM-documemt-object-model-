@@ -1,0 +1,7 @@
+There are two more selectors that select elements from HTML document.
+querySelector() and querySelectorAll():
+querySelector() selects the first element that matches a given CSS selector, while querySelectorAll() 
+selects all matching elements.
+
+var element = document.querySelector("#myElementId");
+var elements = document.querySelectorAll(".myClassName");

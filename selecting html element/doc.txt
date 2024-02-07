@@ -1,5 +1,17 @@
 SELECTING OR ACESSING ELEMENTS FROM THE DOM:
 HTML elements can be accessed or "selected" from the Document Object Model using a variety of ways.
+
+- getElementById()
+Eg : var element = document.getElementById("myElementId");
 The easiest and most beginner-friendly way to access elements in the DOM is by using
 the document.getElementById() method. This method takes a single argument, the id of the element you want 
 to access, and returns the element as an object.
+
+- getElementbyClassName()
+Eg : var elements = document.getElementsByClassName("myClassName");
+This method is used to select all elements with a specific tag
+
+-getElementbyTagName()
+Eg : var elements = document.getElementsByTagName("div");
+This method is similar to getElementsByClassName.This method is used to select all elements with a 
+specific tag.

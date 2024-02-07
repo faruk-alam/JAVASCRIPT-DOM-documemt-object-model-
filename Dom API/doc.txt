@@ -1,0 +1,40 @@
+THE DOM API
+The DOM API (Application Programming Interface) is essentially the gateway between your HTML document 
+rendered on the web and your JavaScript.
+The DOM API provides a set of properties and methods which makes it possible to access information about 
+our document or specific elements inside our script, as well as change their state on the browser.
+In other words, JavaScript interacts with the page through the DOM API
+
+EXAMINING THE DOCUMENT OBJECT
+Console.dir(document)
+Console.dir(document) gives us an interactive representation of our document. Interactive because it 
+becomes very easy to expand the document object and inspect the properties and methods inside the 
+document object.
+
+Checking for the Document Type
+console.log(document.doctype)
+There have been various versions of HTML Markup since its invention in 1993. With the doctype property, 
+we can get information about the type and version of the HTML Markup being used in the document
+
+Time of last modification
+console.log(document.lastModified)
+We can also check to see when last our document (HTML) was modified. The above code will log the 
+information to the console.View the head part of the HTML Document
+
+console.log(document.head)
+This will log the HTML head tag as well as every other tags nested inside of it
+
+Get the Body of the document
+console.log(document.body)
+This logs a HTML representation of the body tag and all nested tags, onto the browser console
+
+Get the Form(s) within the document.
+console.log(document.forms)
+This will return a HTMLCollection (similar to an array) showing the number of forms (if any) present 
+in the document as well as their index properties.
+
+Get the entire HTML mark up
+console.log(document.all)
+This will log the entire markup within the HTML document onto the console. In our case, a 
+HTMLCollection containing 25 items (HTML elements) will be shown on the console
+
