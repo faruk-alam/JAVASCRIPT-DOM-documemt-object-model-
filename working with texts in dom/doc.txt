@@ -1,0 +1,98 @@
+WORKING WITH TEXTS
+When working texts in the DOM, there are three properties you will frequently come across:
+
+innerHTML
+innerText
+textContent
+
+InnerHTML:
+WHAT DOES INNERHTML RETURN?
+InnerHTML returns the string inside the HTML (or XML) markup contained within our string, 
+including any spacing, line breaks and formatting irregularities.
+
+WHEN TO USE INNERHTML
+You should use innerHTML when you want to see the HTML markup and what exactly is in your element — 
+including any spacing, line breaks and formatting irregularities.
+
+ 
+
+INNERHTML ADDITIONAL NOTES
+If the text inside the element includes the characters &, <, or >, innerHTML will return these characters 
+as HTML entities “&amp;”, “&lt;” and “&gt;”.
+
+InnerText:
+WHAT INNERTEXT RETURNS
+InnerText returns the string inside the tag.it approximates the “rendered” text content of a node and is 
+aware of styling and CSS.
+
+Think of it this way: If a user highlighted the contents of an element on their screen and copied it to 
+their clipboard, what you get with innerText is exactly what it would return.
+
+ 
+
+WHEN TO USE INNERTEXT
+You should use innerText when you only need to see what’s in the element without the formatting.
+
+ 
+
+INNERTEXT ADDITIONAL NOTES
+When using innerText it retrieves and sets the content of the tag as plain text. Whereas when you use 
+innerHTML, it retrieves and sets the same content in HTML format.
+
+ 
+
+What Is TextContent in JavaScript?
+
+ 
+
+WHAT TEXTCONTENT RETURNS
+TextContent returns the content of all elements in the node, including script and style elements. It’s 
+aware of formatting like spacing and line breaks and will return those, as well.
+
+ 
+
+WHEN TO USE TEXTCONTENT
+You should use textContent you want to see what’s in the element, plus any styling.
+
+ 
+
+TEXTCONTENT ADDITIONAL NOTES
+While innerText is very similar to textContent, there are important differences between them. Put simply, 
+innerText is aware of the rendered appearance of text while textContent is not.
+
+LEVEL UP YOUR SKILLS
+4 Ways to Help Software Developers Build Their Skills
+
+ 
+
+InnerText vs. InnerHTML vs. TextContent
+Let’s revisit our original code.
+
+<div id='blog test'>
+   
+This element is <strong>strong</strong> and     has some super fun <code>code</code>!
+
+</div>
+
+const getValue = document.getElementById('blog-test');
+Here’s what innerHTML, innerText and textContent return:
+
+getValue.innerHTML
+
+This element is <strong>strong</strong> and has    some super fun <code>code</code>!
+
+
+
+getValue.innerText
+
+This element is strong and has some super fun code!
+
+getValue.textContent
+
+This element is strong and     has some super fun code!
+As you can see, there are some key differences between the three that we covered in this post.
+
+In addition, you should also be aware that there are different safety implications of using each property — 
+especially innerHTML. For example, though innerHTML is often used to insert text or styling, it can also
+ be used to insert script tags that execute JavaScript. While HTML5 blocks any script tag inserted via 
+ innerHTML from executing, there are other ways to execute JavaScript that don’t involve script.
