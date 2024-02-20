@@ -11,4 +11,7 @@ function removeElement() {
    childElem.parentNode.removeChild(childElem);
 }
 
+const removeHeading = document.querySelector("h2");
+removeHeading.remove()
+
 

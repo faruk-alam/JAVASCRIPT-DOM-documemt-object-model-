@@ -1,0 +1,22 @@
+Creating New Nodes
+In a static website, elements are added to the page by directly writing HTML in an .html file. In a dynamic 
+web app, elements and text are often added with JavaScript. The createElement() and createTextNode() methods 
+are used to create new nodes in the DOM.
+
+Property/Method	Description
+createElement()	Create a new element node
+createTextNode()	Create a new text node
+
+Inserting Nodes into the DOM
+In order to see the new text nodes and elements we create on the front end, we will need to insert them into 
+the document. The methods appendChild() and insertBefore() are used to add items to the beginning, middle, 
+or end of a parent element, and replaceChild() is used to replace an old node with a new node.
+
+Property/Method                          	Description
+node.appendChild()	         Add a node as the last child of a parent element
+node.insertBefore()	         Insert a node into the parent element before a specified sibling node
+node.replaceChild()	         Replace an existing node with a new node
+
+There is a another way,we can add element,by using prepend() and InnerText method.This method add element
+beginning of the document body.
+
